@@ -17,7 +17,7 @@ xml_tree.SubElement(channel_element, 'format').text = yaml_data['format']
 xml_tree.SubElement(channel_element, 'subtitle').text = yaml_data['subtitle']
 xml_tree.SubElement(channel_element, 'itunes:author').text = yaml_data['author']
 xml_tree.SubElement(channel_element, 'description').text = yaml_data['description']
-xml_tree.SubElement(channel_element, 'itunes"image', {'href': link_prefix + yaml_data['image']})
+xml_tree.SubElement(channel_element, 'itunes"image', {'href': yaml_data['link'] + yaml_data['image']})
 xml_tree.SubElement(channel_element, 'language').text = yaml_data['language']
 xml_tree.SubElement(channel_element, 'link').text = yaml_data['link']
 
@@ -34,7 +34,7 @@ for item in yaml_data['item']:
 
 
     enclosure = xml_tree.SubElement(item_element, 'enclosure', {
-        'url': link_prefix + item['file'],
+        'url': yaml_data['link'] + item['file'],
         'type': 'audio/mpeg',
         'length': item['length']
     })
