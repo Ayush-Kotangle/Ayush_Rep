@@ -1,6 +1,6 @@
 # The Future in Tech
 
-<img src="C:\Users\ayush\Desktop\github-practical-actions-4412872-01_02b\images" width="250">
+<img src="https://ayush-kotangle.github.io/Ayush_Rep/images/artwork.jpg" width="250">
 
 The [Future in Tech](https://go.raybo.org/tfit) is a weekly series powered by [LinkedIn Learning](https://www.linkedin.com/learning/) hosted by Senior Staff Instructor [Ray Villalobos](https://www.linkedin.com/in/planetoftheweb).
 
